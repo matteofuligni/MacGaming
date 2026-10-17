@@ -53,6 +53,9 @@ public struct EngineProfile: Codable, Sendable {
     public var dllOverrides: [String: String]?
     /// Wine's EmulateModeset for the game's executables: mode changes stay virtual, the Mac's screen keeps its own.
     public var emulateModeset: Bool?
+    /// Emulator and renderer variables for the Steam session that starts this game: Windows Steam passes
+    /// its environment to every game it launches, so Play restarts Steam when they differ.
+    public var environment: [String: String]? = nil
     /// Third-party fixes installed in the game folder, with source and record (backups/game-patches/...).
     public var patches: [String]?
     /// Game files renamed out of the way (relative to the install folder), e.g. intro movies.
@@ -268,6 +271,9 @@ extension Engine {
             if let hardware = entry.hardware { lines.append("  Mac: \(hardware)") }
             if let arguments = entry.launchArguments, !arguments.isEmpty { lines.append("  Launch arguments: \(arguments.joined(separator: " "))") }
             if entry.emulateModeset == true { lines.append("  Display modes: emulated (Wine EmulateModeset)") }
+            if let environment = entry.environment, !environment.isEmpty {
+                lines.append("  Environment: " + environment.sorted { $0.key < $1.key }.map { "\($0.key)=\($0.value)" }.joined(separator: " "))
+            }
             for patch in entry.patches ?? [] { lines.append("  Patch: \(patch)") }
             for file in entry.disabledFiles ?? [] { lines.append("  Disabled game file: \(file)") }
             if let overrides = entry.dllOverrides, !overrides.isEmpty {

@@ -98,6 +98,14 @@ do {
     case "configuration-arguments":
         guard filtered.count >= 2 else { throw Failure("Usage: macgaming configuration-arguments APPID [ARGUMENTS...]") }
         print(try engine.updateConfigurationArguments(appID: filtered[1], arguments: Array(filtered.dropFirst(2))))
+    case "configuration-env":
+        guard filtered.count >= 2 else { throw Failure("Usage: macgaming configuration-env APPID [KEY=VALUE...]") }
+        var environment: [String: String] = [:]
+        for item in filtered.dropFirst(2) {
+            guard let equals = item.firstIndex(of: "="), equals != item.startIndex else { throw Failure("Use KEY=VALUE, e.g. FEX_X87REDUCEDPRECISION=1.") }
+            environment[String(item[..<equals])] = String(item[item.index(after: equals)...])
+        }
+        print(try engine.updateConfigurationEnvironment(appID: filtered[1], environment: environment))
     case "configuration-recover":
         guard filtered.count == 2 else { throw Failure("Usage: macgaming configuration-recover APPID") }
         print(try engine.recoverConfiguration(appID: filtered[1]))
@@ -123,7 +131,7 @@ do {
         print(status.label + (status.wineserverPID.map { " (wineserver PID \($0))" } ?? ""))
     case "stop": print(try engine.stop())
     case "help", "--help", "-h":
-        print("MacGaming 0.1\nCommands: register-storage PATH, doctor, prepare, install-steam, steam [--debug], hud [on|off] (FPS overlay; restart Steam to apply), install APPID, copy-game APPID, games, launch APPID, backup APPID, backups APPID, restore APPID [BACKUP], profile APPID, configurations APPID, configuration APPID ID, configuration-create APPID RENDERER, configuration-arguments APPID [ARGS...], configuration-recover APPID, diagnostics APPID, diagnostics-export APPID, check APPID RESULT NAME [NOTES], mark APPID STATUS, modeset APPID on|off, override APPID DLL on|off, disable-file/enable-file APPID PATH, mtld3d-enable/-disable APPID (Direct3D 9), vkd3d-enable/-disable APPID (Direct3D 12), run PATH.exe, status, stop\nDefault environment: ARM64/FEX (Hadron), the only one that renders Direct3D 11 games today (Hadron's DXMT)\n--rosetta: Intel/Rosetta environment (Steam yes, Direct3D 11 games no) · --fex: accepted, already the default\nDXMT for Rosetta (loads but does not render yet), with --rosetta: install-dxmt, dxmt-enable APPID, dxmt-disable APPID\nAll project data lives on the external drive.")
+        print("MacGaming 0.1\nCommands: register-storage PATH, doctor, prepare, install-steam, steam [--debug], hud [on|off] (FPS overlay; restart Steam to apply), install APPID, copy-game APPID, games, launch APPID, backup APPID, backups APPID, restore APPID [BACKUP], profile APPID, configurations APPID, configuration APPID ID, configuration-create APPID RENDERER, configuration-arguments APPID [ARGS...], configuration-env APPID [KEY=VALUE...], configuration-recover APPID, diagnostics APPID, diagnostics-export APPID, check APPID RESULT NAME [NOTES], mark APPID STATUS, modeset APPID on|off, override APPID DLL on|off, disable-file/enable-file APPID PATH, mtld3d-enable/-disable APPID (Direct3D 9), vkd3d-enable/-disable APPID (Direct3D 12), run PATH.exe, status, stop\nDefault environment: ARM64/FEX (Hadron), the only one that renders Direct3D 11 games today (Hadron's DXMT)\n--rosetta: Intel/Rosetta environment (Steam yes, Direct3D 11 games no) · --fex: accepted, already the default\nDXMT for Rosetta (loads but does not render yet), with --rosetta: install-dxmt, dxmt-enable APPID, dxmt-disable APPID\nAll project data lives on the external drive.")
     default: throw Failure("Unknown command. Use macgaming --help.")
     }
 } catch {

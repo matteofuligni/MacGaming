@@ -10,6 +10,15 @@ public struct PrefixState: Codable {
     public var updatedAt: Date
 }
 
+/// How MacGaming last started Steam in a prefix. Windows Steam passes its environment to every game.
+struct SteamSession: Codable, Equatable {
+    var schemaVersion = 1
+    var gameEnvironment: [String: String]
+    var diagnostic: Bool
+}
+
+enum SteamSessionAction: Equatable { case start, reuse, restart }
+
 public struct Engine {
     public let storage: Storage
     public let translation: CPUTranslation
@@ -117,14 +126,41 @@ public struct Engine {
     public func launchSteam(appID: String? = nil) throws -> String {
         let id = try appID.map { try Self.validated(appID: $0) }
         var note = ""
-        if let id { try applySelectedConfiguration(appID: id) }
+        let session = steamSession()
+        // Without a game, a running Steam keeps its session; a new one starts with no game variables.
+        var gameEnvironment: [String: String] = [:]
+        var diagnostic = false
+        if let id {
+            gameEnvironment = try Self.validatedGameEnvironment(
+                (try profile(appID: id))?.selectedEntry(for: translation)?.environment ?? [:])
+            let phase = try status().phase
+            let steamRunning = phase != .stopped && phase != .environmentRunning
+            if Self.steamSessionAction(steamRunning: steamRunning, current: session?.gameEnvironment, wanted: gameEnvironment) == .restart {
+                if case .playing = phase { throw Failure("Close the running game first: Steam must restart to apply this game's environment.") }
+                _ = try stop()
+                diagnostic = session?.diagnostic ?? false
+                note += " Steam restarted for this game's environment."
+            }
+            try applySelectedConfiguration(appID: id)
+        }
         // A copy of the saves before each game launch, unless the game is already running.
         if let id, (try? status().phase) != .playing(appID: id) {
-            do { note = try makeSaveBackup(appID: id, reason: .beforeLaunch, onlyIfChanged: true).map { " Saves backed up before launch (\($0.id))." } ?? "" }
-            catch { note = " Automatic save backup skipped: \(error.localizedDescription)" }
+            do { note += try makeSaveBackup(appID: id, reason: .beforeLaunch, onlyIfChanged: true).map { " Saves backed up before launch (\($0.id))." } ?? "" }
+            catch { note += " Automatic save backup skipped: \(error.localizedDescription)" }
         }
-        let pid = try startSteam(id.map { ["-applaunch", $0] + (try launchArguments(appID: $0)) } ?? []).pid
+        let pid = try startSteam(id.map { ["-applaunch", $0] + (try launchArguments(appID: $0)) } ?? [],
+                                 diagnostic: diagnostic, gameEnvironment: gameEnvironment).pid
         return "Launch request sent to Windows Steam (PID \(pid)). Sign-in and Steam Guard happen in its window." + note
+    }
+    /// A running Steam is reused only when it was started with the environment this game needs.
+    static func steamSessionAction(steamRunning: Bool, current: [String: String]?, wanted: [String: String]) -> SteamSessionAction {
+        guard steamRunning else { return .start }
+        return (current ?? [:]) == wanted ? .reuse : .restart
+    }
+    var steamSessionRelative: String { prefixRelative + "/macgaming-steam-session.json" }
+    func steamSession() -> SteamSession? {
+        guard let url = try? storage.path(steamSessionRelative), let data = try? Data(contentsOf: url) else { return nil }
+        return try? JSONDecoder().decode(SteamSession.self, from: data)
     }
     /// Opens Steam's own install dialog for an AppID: library and confirmation stay in Steam's window.
     public func requestInstall(appID: String) throws -> String {
@@ -170,14 +206,15 @@ public struct Engine {
     public func restartSteamForDiagnostics() throws -> String {
         var lines: [String] = []
         if SessionProbe.wineserverPID(prefix: try prefix()) != nil { lines.append(try stop()) }
-        let (pid, log) = try startSteam([], environment: Self.diagnosticEnvironment)
+        let (pid, log) = try startSteam([], diagnostic: true)
         lines.append("Windows Steam started with diagnostic logging (PID \(pid)). Steam and the games it launches log to \(log.path)")
         lines.append("Back to normal: macgaming stop, then macgaming steam.")
         return lines.joined(separator: "\n")
     }
 
     @discardableResult
-    private func startSteam(_ extra: [String], environment: [String: String] = [:]) throws -> (pid: Int32, log: URL) {
+    private func startSteam(_ extra: [String], diagnostic: Bool = false,
+                            gameEnvironment: [String: String] = [:]) throws -> (pid: Int32, log: URL) {
         try storage.validate()
         let runtime = try Runtime(translation: translation, storage: storage); try runtime.verify()
         let prefix = try prefix()
@@ -195,8 +232,15 @@ public struct Engine {
         }
         let arguments = [try steamExecutable().path] + runtime.manifest.steamArguments
             + (useWrapper ? WebHelperWrapper.steamArguments : []) + extra
-        let logName = "steam-\(translation.rawValue)-\(environment.isEmpty ? "" : "debug-")\(UUID().uuidString)"
+        // Only a new steam.exe takes this environment; a running one just receives the arguments.
+        let phase = SessionProbe.status(prefix: prefix).phase
+        let startsSteam = phase == .stopped || phase == .environmentRunning
+        let environment = (diagnostic ? Self.diagnosticEnvironment : [:]).merging(gameEnvironment) { $1 }
+        let logName = "steam-\(translation.rawValue)-\(diagnostic ? "debug-" : "")\(UUID().uuidString)"
         let pid = try runtime.run(arguments, prefix: prefix, logName: logName, detached: true, overrides: environment).pid
+        if startsSteam {
+            try storage.write(SteamSession(gameEnvironment: gameEnvironment, diagnostic: diagnostic), to: steamSessionRelative)
+        }
         return (pid, try storage.path("logs/\(logName).log"))
     }
     public func stop() throws -> String {

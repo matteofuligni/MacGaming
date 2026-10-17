@@ -151,6 +151,43 @@ final class ReliabilityTests: XCTestCase {
         XCTAssertFalse(FileManager.default.fileExists(atPath: root.appendingPathComponent("logs").path))
         XCTAssertFalse(FileManager.default.fileExists(atPath: root.appendingPathComponent("backups/configurations").path))
     }
+    func testConfigurationEnvironmentIsValidatedAndResetsEvidence() throws {
+        let root = try fixture(); defer { try? FileManager.default.removeItem(at: root) }
+        let engine = Engine(storage: Storage(root: root))
+        let steamapps = try engine.steamExecutable().deletingLastPathComponent().appendingPathComponent("steamapps")
+        try FileManager.default.createDirectory(at: steamapps.appendingPathComponent("common/Game"), withIntermediateDirectories: true)
+        try "\"AppState\" { \"appid\" \"1\" \"name\" \"Game\" \"installdir\" \"Game\" \"StateFlags\" \"4\" \"buildid\" \"100\" }".write(to: steamapps.appendingPathComponent("appmanifest_1.acf"), atomically: true, encoding: .utf8)
+        let fake = """
+        {"schemaVersion":1,"id":"fake","version":"1","translation":"fex","hostArchitecture":"arm64",
+        "sourceURL":"","packageSHA256":"","loader":"does-not-exist","server":"does-not-exist",
+        "loaderSHA256":"","serverSHA256":"","environment":{},"steamArguments":[],"status":""}
+        """
+        try Data(fake.utf8).write(to: root.appendingPathComponent("manifests/runtime-fex.json"))
+        _ = try engine.createConfiguration(appID: "1", renderer: .mtld3d)
+        _ = try engine.recordCheck(appID: "1", name: "Launch to menu", result: .passed, notes: "Manual observation")
+        // Only emulator and renderer variables: nothing that reaches the loader, dyld or Wine itself.
+        XCTAssertThrowsError(try engine.updateConfigurationEnvironment(appID: "1", environment: ["DYLD_INSERT_LIBRARIES": "/tmp/x.dylib"]))
+        XCTAssertThrowsError(try engine.updateConfigurationEnvironment(appID: "1", environment: ["WINEDLLOVERRIDES": "d3d9=n"]))
+        XCTAssertThrowsError(try engine.updateConfigurationEnvironment(appID: "1", environment: ["fex_x87reducedprecision": "1"]))
+        XCTAssertThrowsError(try engine.updateConfigurationEnvironment(appID: "1", environment: ["FEX_X87REDUCEDPRECISION": "1\nWINEDEBUG=+all"]))
+        XCTAssertEqual(try engine.profile(appID: "1")?.selectedEntry(for: .fex)?.checks.first?.result, .passed)
+
+        _ = try engine.updateConfigurationEnvironment(appID: "1", environment: ["FEX_X87REDUCEDPRECISION": "1"])
+        let entry = try XCTUnwrap(engine.profile(appID: "1")?.selectedEntry(for: .fex))
+        XCTAssertEqual(entry.environment, ["FEX_X87REDUCEDPRECISION": "1"])
+        XCTAssertEqual(entry.checks.first?.result, .pending)
+        XCTAssertTrue(try engine.profileReport(appID: "1").contains("Environment: FEX_X87REDUCEDPRECISION=1"))
+        _ = try engine.updateConfigurationEnvironment(appID: "1", environment: [:])
+        XCTAssertNil(try engine.profile(appID: "1")?.selectedEntry(for: .fex)?.environment)
+    }
+    func testSteamRestartsOnlyWhenTheGameEnvironmentDiffers() {
+        let x87 = ["FEX_X87REDUCEDPRECISION": "1"]
+        XCTAssertEqual(Engine.steamSessionAction(steamRunning: false, current: x87, wanted: [:]), .start)
+        XCTAssertEqual(Engine.steamSessionAction(steamRunning: true, current: nil, wanted: [:]), .reuse)
+        XCTAssertEqual(Engine.steamSessionAction(steamRunning: true, current: x87, wanted: x87), .reuse)
+        XCTAssertEqual(Engine.steamSessionAction(steamRunning: true, current: nil, wanted: x87), .restart)
+        XCTAssertEqual(Engine.steamSessionAction(steamRunning: true, current: x87, wanted: [:]), .restart)
+    }
     func testDiagnosticRedactionAndEvidenceInvalidation() throws {
         // Construct a synthetic identifier rather than embedding a real account in the fixture.
         let fakeSteamID = "7656119" + String(repeating: "0", count: 10)

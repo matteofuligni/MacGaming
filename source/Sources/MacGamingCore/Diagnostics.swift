@@ -46,6 +46,33 @@ extension Engine {
         }
         return "Launch arguments saved. Re-check this configuration in game."
     }
+    /// Variable prefixes a configuration may set: emulator and renderer tuning only, never the loader,
+    /// Wine's own paths or anything dyld reads.
+    static let gameEnvironmentPrefixes = ["FEX_", "DXMT_", "MTLD3D_", "VKD3D_", "DXVK_", "MESA_"]
+    static func validatedGameEnvironment(_ environment: [String: String]) throws -> [String: String] {
+        for (key, value) in environment {
+            guard key.count <= 64, let first = key.first, first.isASCII, first.isUppercase,
+                  key.allSatisfy({ $0.isASCII && ($0.isUppercase || $0.isNumber || $0 == "_") }),
+                  gameEnvironmentPrefixes.contains(where: { key.hasPrefix($0) }) else {
+                throw Failure("\(key) is not allowed. Use emulator or renderer variables: \(gameEnvironmentPrefixes.joined(separator: ", ")).")
+            }
+            guard value.count <= 256, !value.contains(where: \.isNewline), !value.contains("\0") else {
+                throw Failure("Invalid value for \(key).")
+            }
+        }
+        return environment
+    }
+    /// Replaces the selected configuration's environment; an empty dictionary removes it.
+    public func updateConfigurationEnvironment(appID: String, environment: [String: String]) throws -> String {
+        let environment = try Self.validatedGameEnvironment(environment)
+        try ensureNoGamePlaying()
+        _ = try editProfile(appID: appID) { entry in
+            if (entry.environment ?? [:]) != environment {
+                entry.environment = environment.isEmpty ? nil : environment
+            }
+        }
+        return "Environment saved; Play restarts Steam with it when needed. Re-check this configuration in game."
+    }
     public func updateConfigurationModeset(appID: String, enabled: Bool) throws -> String {
         try ensureNoGamePlaying()
         _ = try editProfile(appID: appID) { entry in

@@ -72,7 +72,10 @@
         ],
         "limits": [
           "Example configuration only; no compatibility result is supplied."
-        ]
+        ],
+        "environment": {
+          "FEX_X87REDUCEDPRECISION": "1"
+        }
       }
     }
   },

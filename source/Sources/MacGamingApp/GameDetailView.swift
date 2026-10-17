@@ -9,6 +9,7 @@ struct GameDetailView: View {
     let game: InstalledGame
     @Environment(\.dismiss) private var dismiss
     @State private var argumentText = ""
+    @State private var environmentText = ""
     @State private var diagnosticText = ""
     @State private var newCheck = ""
     @State private var dllName = ""
@@ -124,6 +125,17 @@ struct GameDetailView: View {
                     let arguments = argumentText.components(separatedBy: .newlines).filter { !$0.isEmpty }
                     model.perform { try $0.updateConfigurationArguments(appID: game.appID, arguments: arguments) }
                 }.disabled(model.busy || entry.rendererKind == nil)
+                Text("Environment · one KEY=VALUE per line (FEX_, DXMT_, MTLD3D_, VKD3D_, DXVK_, MESA_); Play restarts Steam with it")
+                    .font(.caption)
+                TextEditor(text: $environmentText).font(.system(.callout, design: .monospaced)).frame(height: 50).border(.quaternary)
+                Button("Save Environment") {
+                    var environment: [String: String] = [:]
+                    for line in environmentText.components(separatedBy: .newlines) where !line.trimmingCharacters(in: .whitespaces).isEmpty {
+                        let parts = line.split(separator: "=", maxSplits: 1).map { $0.trimmingCharacters(in: .whitespaces) }
+                        environment[parts[0]] = parts.count == 2 ? parts[1] : ""
+                    }
+                    model.perform { try $0.updateConfigurationEnvironment(appID: game.appID, environment: environment) }
+                }.disabled(model.busy || entry.rendererKind == nil)
                 Toggle("Emulate display modes", isOn: Binding(get: { entry.emulateModeset ?? false }, set: { value in
                     model.perform { try $0.updateConfigurationModeset(appID: game.appID, enabled: value) }
                 })).disabled(model.busy || entry.rendererKind == nil)
@@ -177,7 +189,10 @@ struct GameDetailView: View {
             }.padding(.top, 8)
         }
     }
-    private func loadArguments() { argumentText = (entry?.launchArguments ?? []).joined(separator: "\n") }
+    private func loadArguments() {
+        argumentText = (entry?.launchArguments ?? []).joined(separator: "\n")
+        environmentText = (entry?.environment ?? [:]).sorted { $0.key < $1.key }.map { "\($0.key)=\($0.value)" }.joined(separator: "\n")
+    }
 }
 
 private struct CheckEditor: View {

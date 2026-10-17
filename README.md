@@ -12,6 +12,8 @@ Automatic unit tests exercise the manager, not gameplay compatibility.
 
 - Native SwiftUI library and CLI.
 - Independent game configurations for each runtime and renderer.
+- Per-game emulator and renderer variables (for example FEX's x87 precision); Play restarts
+  Windows Steam with them when needed, because games inherit Steam's environment.
 - Version-aware compatibility records and explicit manual checks.
 - Save backups with integrity checks and a safety backup before restoring.
 - Journaled configuration changes with rollback and recovery.

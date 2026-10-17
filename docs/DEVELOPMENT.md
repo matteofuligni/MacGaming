@@ -82,6 +82,9 @@ Live `profiles/`, `manifests/`, prefixes, games, account files, saves, backups, 
 logs, trace files, downloads, toolchains and generated builds are private and ignored.
 
 Changing renderer settings invalidates the configuration's previous test evidence.
+A configuration's environment accepts only emulator and renderer variables (`FEX_`, `DXMT_`,
+`MTLD3D_`, `VKD3D_`, `DXVK_`, `MESA_`). MacGaming records the variables it started Steam with in
+the prefix and restarts Steam on Play when a game needs others; it refuses while a game runs.
 Configuration changes are applied on Play with a journal, verification and rollback.
 Restoring saves requires an integrity check and a backup of current data first.
 
