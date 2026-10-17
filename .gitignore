@@ -18,6 +18,7 @@
 !/docs/PUBLICATION.md
 !/docs/dependency-license-inventory.json
 !/docs/publication-files.json
+!/docs/committed-files-audit.json
 **/.DS_Store
 **/.build/
 **/.swiftpm/
