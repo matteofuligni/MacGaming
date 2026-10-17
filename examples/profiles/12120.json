@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 2,
+  "appID": "12120",
+  "name": "Grand Theft Auto: San Andreas",
+  "engines": {
+    "fex": {
+      "configurationName": "Direct3D 9 · mtld3d + San Andreas fixes",
+      "renderer": "mtld3d (Hadron) · Direct3D 9 on Metal · MacGamingSA MULTIPLYADD compatibility",
+      "rendererKind": "mtld3d",
+      "dllOverrides": {
+        "d3d9": "native,builtin",
+        "dinput8": "native,builtin"
+      },
+      "emulateModeset": true,
+      "status": "untested",
+      "runtimeID": "hadron-wine-arm64",
+      "runtimeVersion": "0.3.0-wine-11.18-273-g4b68dfdadf",
+      "buildID": "",
+      "date": "",
+      "recommended": false,
+      "checks": [
+        {
+          "name": "Launch to menu",
+          "result": "pending"
+        },
+        {
+          "name": "Rendering in gameplay",
+          "result": "pending"
+        },
+        {
+          "name": "Long session with save, quit and reload",
+          "result": "pending"
+        },
+        {
+          "name": "Audio and controller",
+          "result": "pending"
+        }
+      ],
+      "limits": [
+        "Example configuration only; no compatibility result is supplied."
+      ]
+    },
+    "rosetta": {
+      "configurationName": "Rosetta · Wine default (blocked)",
+      "dllOverrides": {
+        "dinput8": "native,builtin"
+      },
+      "emulateModeset": true,
+      "status": "untested",
+      "runtimeID": "wine-stable",
+      "runtimeVersion": "11.0_1",
+      "buildID": "",
+      "date": "",
+      "recommended": false,
+      "checks": [
+        {
+          "name": "Launch to menu",
+          "result": "pending"
+        },
+        {
+          "name": "Rendering in gameplay",
+          "result": "pending"
+        },
+        {
+          "name": "Long session with save, quit and reload",
+          "result": "pending"
+        },
+        {
+          "name": "Audio and controller",
+          "result": "pending"
+        }
+      ],
+      "limits": [
+        "Example configuration only; no compatibility result is supplied."
+      ]
+    }
+  },
+  "configurations": {
+    "fex": {
+      "d3d9": {
+        "configurationName": "Direct3D 9 · mtld3d + San Andreas fixes",
+        "renderer": "mtld3d (Hadron) · Direct3D 9 on Metal · MacGamingSA MULTIPLYADD compatibility",
+        "rendererKind": "mtld3d",
+        "dllOverrides": {
+          "d3d9": "native,builtin",
+          "dinput8": "native,builtin"
+        },
+        "emulateModeset": true,
+        "status": "untested",
+        "runtimeID": "hadron-wine-arm64",
+        "runtimeVersion": "0.3.0-wine-11.18-273-g4b68dfdadf",
+        "buildID": "",
+        "date": "",
+        "recommended": false,
+        "checks": [
+          {
+            "name": "Launch to menu",
+            "result": "pending"
+          },
+          {
+            "name": "Rendering in gameplay",
+            "result": "pending"
+          },
+          {
+            "name": "Long session with save, quit and reload",
+            "result": "pending"
+          },
+          {
+            "name": "Audio and controller",
+            "result": "pending"
+          }
+        ],
+        "limits": [
+          "Example configuration only; no compatibility result is supplied."
+        ]
+      }
+    },
+    "rosetta": {
+      "legacy": {
+        "configurationName": "Rosetta · Wine default (blocked)",
+        "dllOverrides": {
+          "dinput8": "native,builtin"
+        },
+        "emulateModeset": true,
+        "status": "untested",
+        "runtimeID": "wine-stable",
+        "runtimeVersion": "11.0_1",
+        "buildID": "",
+        "date": "",
+        "recommended": false,
+        "checks": [
+          {
+            "name": "Launch to menu",
+            "result": "pending"
+          },
+          {
+            "name": "Rendering in gameplay",
+            "result": "pending"
+          },
+          {
+            "name": "Long session with save, quit and reload",
+            "result": "pending"
+          },
+          {
+            "name": "Audio and controller",
+            "result": "pending"
+          }
+        ],
+        "limits": [
+          "Example configuration only; no compatibility result is supplied."
+        ]
+      }
+    }
+  },
+  "selectedConfigurations": {
+    "fex": "d3d9",
+    "rosetta": "legacy"
+  }
+}

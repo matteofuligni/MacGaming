@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "dxmt",
+  "version": "0.80",
+  "license": "MIT",
+  "sourceURL": "https://github.com/3Shain/dxmt/releases/tag/v0.80",
+  "archiveURL": "https://github.com/3Shain/dxmt/releases/download/v0.80/dxmt-v0.80-builtin.tar.gz",
+  "archive": "downloads/dxmt-v0.80-builtin.tar.gz",
+  "archiveSHA256": "8f260e36b5739e68f3bad613381441385c4dc7b85b78ba8de653d5a6a264529d",
+  "installPath": "runtimes/dxmt-v0.80",
+  "dllPath": "runtimes/dxmt-v0.80/v0.80",
+  "runtimes": [
+    "wine-stable 11.0_1"
+  ],
+  "runtimeLibraries": {
+    "v0.80/x86_64-unix/winemac.so": "winemac.so",
+    "v0.80/x86_64-unix/ntdll.so": "ntdll.so"
+  },
+  "files": [
+    {
+      "path": "v0.80/x86_64-unix/winemetal.so",
+      "sha256": "3d50d7f39c64778c71d0af2fce1cde818d09ffbce7c4f7b8ae24ae1df567c0ca"
+    },
+    {
+      "path": "v0.80/x86_64-windows/d3d11.dll",
+      "sha256": "7ca382af0eb32d8a432f6efb14d594fefb45673663be1f7e6682254bff885c47"
+    },
+    {
+      "path": "v0.80/x86_64-windows/dxgi.dll",
+      "sha256": "fc58aae0aba511a1ec4d2417e5bba6adb888bb14315d0f59cccdfd27f670d544"
+    },
+    {
+      "path": "v0.80/x86_64-windows/d3d10core.dll",
+      "sha256": "833d26971abc8661efc8b5cc18548c70ce8e482e4ea4b1d3f69a367612264d26"
+    },
+    {
+      "path": "v0.80/x86_64-windows/winemetal.dll",
+      "sha256": "514245d533c750599614311a792c45ed600aef52948571d98c0fc70fd3df16e0"
+    },
+    {
+      "path": "v0.80/i386-windows/d3d11.dll",
+      "sha256": "9afc2b3419818618c4c87274435a28935b0df002caa4b9a8d3a88d3dc846b17d"
+    },
+    {
+      "path": "v0.80/i386-windows/dxgi.dll",
+      "sha256": "7df8cdf66e12a108410002abc77b01f70aa59b8a36a70fa0bc6ae3b056841319"
+    },
+    {
+      "path": "v0.80/i386-windows/d3d10core.dll",
+      "sha256": "c5a26310d14a30c3e1700a4d0c9865be28a11351a5c4dc5b83ab1bd8fcf7662f"
+    },
+    {
+      "path": "v0.80/i386-windows/winemetal.dll",
+      "sha256": "20a6865facebdaac92b6c06fadf37d2efb5a242b22ca1c349bb57d7ad43df8e3"
+    }
+  ],
+  "prefixDLLs": [
+    {
+      "source": "v0.80/x86_64-windows/d3d11.dll",
+      "destination": "drive_c/windows/system32/d3d11.dll",
+      "machine": "x86_64",
+      "kind": "native",
+      "sha256": "31139c54db4c42c6a84c3a7a6b206a52709ad0763b4e4f6ed7635df09346cbd7"
+    },
+    {
+      "source": "v0.80/x86_64-windows/dxgi.dll",
+      "destination": "drive_c/windows/system32/dxgi.dll",
+      "machine": "x86_64",
+      "kind": "native",
+      "sha256": "ba9580ffa55a9de031c7f6fef488163a018d2c5c4c58769137690634644adef7"
+    },
+    {
+      "source": "v0.80/x86_64-windows/d3d10core.dll",
+      "destination": "drive_c/windows/system32/d3d10core.dll",
+      "machine": "x86_64",
+      "kind": "native",
+      "sha256": "5e77098bab1f141c47e32fb5a6c7a59f5d23053f8bcd7e3faf64dd4b574c32cf"
+    },
+    {
+      "source": "v0.80/x86_64-windows/winemetal.dll",
+      "destination": "drive_c/windows/system32/winemetal.dll",
+      "machine": "x86_64",
+      "kind": "builtin",
+      "sha256": "514245d533c750599614311a792c45ed600aef52948571d98c0fc70fd3df16e0"
+    },
+    {
+      "source": "v0.80/i386-windows/d3d11.dll",
+      "destination": "drive_c/windows/syswow64/d3d11.dll",
+      "machine": "i386",
+      "kind": "native",
+      "sha256": "ef0506b065b261c1094a11117c18b85c01fcdfa769017885044855bfbcc48b47"
+    },
+    {
+      "source": "v0.80/i386-windows/dxgi.dll",
+      "destination": "drive_c/windows/syswow64/dxgi.dll",
+      "machine": "i386",
+      "kind": "native",
+      "sha256": "472985b217090831c85efb66aa6c09025fdd0a6f9b517c29d431f0de7b91ebfa"
+    },
+    {
+      "source": "v0.80/i386-windows/d3d10core.dll",
+      "destination": "drive_c/windows/syswow64/d3d10core.dll",
+      "machine": "i386",
+      "kind": "native",
+      "sha256": "cf93aff7d6d04a0ed52aa883bb96a91a4b2547991934bf94b0265cf16a195089"
+    },
+    {
+      "source": "v0.80/i386-windows/winemetal.dll",
+      "destination": "drive_c/windows/syswow64/winemetal.dll",
+      "machine": "i386",
+      "kind": "builtin",
+      "sha256": "20a6865facebdaac92b6c06fadf37d2efb5a242b22ca1c349bb57d7ad43df8e3"
+    }
+  ],
+  "gameOverrides": [
+    "d3d11",
+    "dxgi",
+    "d3d10core"
+  ],
+  "metalBridgeExport": "_macdrv_functions",
+  "status": "Loading verified with Wine 11.0_1 (64 and 32 bit). No rendering: Gcenx 11.0_1's winemac.so does not export macdrv_functions. nvapi64/nvngx excluded."
+}

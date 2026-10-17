@@ -1,0 +1,35 @@
+{
+  "environment": {
+    "DYLD_FALLBACK_LIBRARY_PATH": "${ROOT}/runtimes/hadron-0.3.0/Hadron.app/Contents/SharedSupport/runtime/dist/ext/lib",
+    "FEX_DISKCACHE": "1",
+    "HADRON_DISABLE_LSTEAMCLIENT": "1",
+    "MACGAMING_WEBHELPER_FLAGS": "--disable-gpu --in-process-gpu --js-flags=--jitless",
+    "MESA_KK_EXPERIMENTAL": "dgc,xfb,sparse",
+    "MTLD3D_CONFIG": "color.hdr.enable=false",
+    "MTLD3D_NO_CRASH_HANDLER": "1",
+    "MTL_HUD_ENABLED": "0",
+    "VKD3D_SHADER_CACHE_PATH": "${ROOT}/prefixes/steam-fex/shadercache",
+    "VKD3D_SWAPCHAIN_MIN_LATENCY_FRAMES": "2",
+    "VK_DRIVER_FILES": "${ROOT}/runtimes/hadron-0.3.0/Hadron.app/Contents/SharedSupport/runtime/dist/mesa/share/vulkan/icd.d/kosmickrisp_mesa_icd.aarch64.json",
+    "WINEDLLOVERRIDES": "mscoree,mshtml=",
+    "WINE_LARGE_ADDRESS_AWARE": "1"
+  },
+  "hostArchitecture": "arm64",
+  "id": "hadron-wine-arm64",
+  "imageReserve": true,
+  "loader": "runtimes/hadron-0.3.0/Hadron.app/Contents/SharedSupport/runtime/dist/bin/wine",
+  "loaderSHA256": "de42b26e607a458c3d29a233d814d483e4f0e891afbb52a41fba41965e576309",
+  "packageSHA256": "4cdc83e30f90e126d6df6d3f4bbce1e85877cd28d8b6d8b8b4c2285f032ab68d",
+  "schemaVersion": 1,
+  "server": "runtimes/hadron-0.3.0/Hadron.app/Contents/SharedSupport/runtime/dist/bin/wineserver",
+  "serverSHA256": "b69ebd8477363e5b8682c6500006baaecac6e05a48becc1ca1b77c988f0acb95",
+  "sourceURL": "https://github.com/Broyojo/hadron/releases/tag/v0.3.0",
+  "status": "Pinned external dependency. Not bundled; compatibility must be checked on your own system.",
+  "steamArguments": [
+    "-cef-disable-gpu",
+    "-cef-disable-gpu-compositing",
+    "-no-cef-sandbox"
+  ],
+  "translation": "fex",
+  "version": "0.3.0-wine-11.18-273-g4b68dfdadf"
+}

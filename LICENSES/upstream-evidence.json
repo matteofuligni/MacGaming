@@ -1,0 +1,41 @@
+{
+  "scope": "Upstream license evidence; external code/payloads are not implicitly included or cleared for redistribution.",
+  "entries": [
+    {
+      "component": "steam-on-m1-wine",
+      "inspectedOn": "2026-10-17",
+      "url": "https://github.com/notpop/steam-on-m1-wine/blob/main/LICENSE",
+      "gitBlobSHA": "5ccf4386ba21ab9021b6c2ea473b232fb04fbc98"
+    },
+    {
+      "component": "DXMT v0.80",
+      "inspectedOn": "2026-10-17",
+      "url": "https://github.com/3Shain/dxmt/blob/v0.80/LICENSE",
+      "gitBlobSHA": "41dd6778e00185dffc2c66a13a541c9faa1ae93c"
+    },
+    {
+      "component": "Hadron v0.3.0 own code",
+      "inspectedOn": "2026-10-17",
+      "url": "https://github.com/Broyojo/hadron/blob/v0.3.0/LICENSE.hadron",
+      "gitBlobSHA": "1e96c1a7ab8ff5db5a440f3055d2d23eaed8856f"
+    },
+    {
+      "component": "Hadron v0.3.0 components",
+      "inspectedOn": "2026-10-17",
+      "url": "https://github.com/Broyojo/hadron/blob/v0.3.0/packaging/third-party.conf",
+      "gitBlobSHA": "dbda34c13ac15f267eb22872803a215620c4c262"
+    },
+    {
+      "component": "Ultimate ASI Loader (not included)",
+      "inspectedOn": "2026-10-17",
+      "url": "https://github.com/ThirteenAG/Ultimate-ASI-Loader/blob/master/license",
+      "gitBlobSHA": "3f48ab3d3b25bd9023c54e7cda30242a3aa4f1ab"
+    },
+    {
+      "component": "GPL-3.0-or-later standard",
+      "inspectedOn": "2026-10-17",
+      "url": "https://github.com/spdx/license-list-data/blob/main/text/GPL-3.0-or-later.txt",
+      "gitBlobSHA": "f6cdd22a6c1fbc887e08a215cb4beb3c47048041"
+    }
+  ]
+}

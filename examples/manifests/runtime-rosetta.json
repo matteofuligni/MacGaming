@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "wine-stable",
+  "version": "11.0_1",
+  "translation": "rosetta",
+  "hostArchitecture": "x86_64",
+  "sourceURL": "https://github.com/Gcenx/macOS_Wine_builds/releases/tag/11.0_1",
+  "packageSHA256": "b50dc50ec7f41d58b115a6b685d4d1315ba3c797bd3aa0f49213f2703cb82388",
+  "loader": "runtimes/wine-stable-11.0_1/Wine Stable.app/Contents/Resources/wine/bin/wine",
+  "server": "runtimes/wine-stable-11.0_1/Wine Stable.app/Contents/Resources/wine/bin/wineserver",
+  "loaderSHA256": "bad3b6126b6612680e26302c0e0b7e56d6c7036eac9bf6313878bdd9039b003f",
+  "serverSHA256": "6da7d389c5a35687e580c4988e03f830a73786cf13aba6761e4791ab74aeea2e",
+  "environment": {
+    "WINEDLLOVERRIDES": "mscoree,mshtml=",
+    "FEX_DISKCACHE": "1",
+    "MTL_HUD_ENABLED": "0"
+  },
+  "steamArguments": [
+    "-cef-disable-gpu",
+    "-cef-disable-gpu-compositing",
+    "-no-cef-sandbox"
+  ],
+  "status": "Pinned external dependency. Not bundled; compatibility must be checked on your own system.",
+  "components": [
+    "dxmt"
+  ]
+}

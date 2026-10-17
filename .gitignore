@@ -1,0 +1,37 @@
+# Only source, recipes, provenance and authored documentation belong in Git.
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/COPYRIGHT
+!/THIRD_PARTY_NOTICES.md
+!/CONTRIBUTING.md
+!/FUNDING.md
+!/LICENSES/
+!/examples/
+!/.github/
+!/source/
+!/docs/
+/docs/*
+!/docs/DEVELOPMENT.md
+!/docs/LICENSING.md
+!/docs/PUBLICATION.md
+!/docs/dependency-license-inventory.json
+!/docs/publication-files.json
+**/.DS_Store
+**/.build/
+**/.swiftpm/
+**/*.xcuserstate
+**/*.icns
+**/__pycache__/
+**/*.pyc
+**/.env
+**/.env.*
+**/*.pem
+**/*.p12
+**/*.mobileprovision
+**/*.provisionprofile
+# Local disk identity and generated payload digests are machine/build specific.
+**/.runtime-*.lock
+/source/STATO.md
+/source/tools/migrate-profiles.py

@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 2,
+  "appID": "414340",
+  "name": "Hellblade: Senua's Sacrifice",
+  "engines": {
+    "fex": {
+      "configurationName": "Direct3D 11 · DXMT",
+      "renderer": "DXMT (Hadron) · Direct3D 11",
+      "rendererKind": "dxmt",
+      "launchArguments": [
+        "-dx11"
+      ],
+      "dllOverrides": {},
+      "configFileEdits": [
+        {
+          "path": "HellbladeGame/Saved/Config/WindowsNoEditor/Engine.ini",
+          "removeKeys": [
+            "D3D12.PSO.StallTimeoutInMs",
+            "r.ShaderPipelineCache.Enabled",
+            "r.ShaderPipelineCache.PreOptimizeEnabled",
+            "r.ShaderPipelineCache.SaveUserCache",
+            "r.ShaderPipelineCache.LogPSO",
+            "r.ShaderPipelineCache.SaveAfterPSOsLogged"
+          ],
+          "root": "appDataLocal",
+          "section": "SystemSettings",
+          "values": {}
+        }
+      ],
+      "status": "untested",
+      "runtimeID": "hadron-wine-arm64",
+      "runtimeVersion": "0.3.0-wine-11.18-273-g4b68dfdadf",
+      "buildID": "",
+      "date": "",
+      "recommended": false,
+      "checks": [
+        {
+          "name": "Launch to menu",
+          "result": "pending"
+        },
+        {
+          "name": "Rendering in gameplay",
+          "result": "pending"
+        },
+        {
+          "name": "Long session with save, quit and reload",
+          "result": "pending"
+        },
+        {
+          "name": "Audio and controller",
+          "result": "pending"
+        }
+      ],
+      "limits": [
+        "Example configuration only; no compatibility result is supplied."
+      ]
+    }
+  },
+  "configurations": {
+    "fex": {
+      "dx11": {
+        "configurationName": "Direct3D 11 · DXMT",
+        "renderer": "DXMT (Hadron) · Direct3D 11",
+        "rendererKind": "dxmt",
+        "launchArguments": [
+          "-dx11"
+        ],
+        "dllOverrides": {},
+        "configFileEdits": [
+          {
+            "path": "HellbladeGame/Saved/Config/WindowsNoEditor/Engine.ini",
+            "removeKeys": [
+              "D3D12.PSO.StallTimeoutInMs",
+              "r.ShaderPipelineCache.Enabled",
+              "r.ShaderPipelineCache.PreOptimizeEnabled",
+              "r.ShaderPipelineCache.SaveUserCache",
+              "r.ShaderPipelineCache.LogPSO",
+              "r.ShaderPipelineCache.SaveAfterPSOsLogged"
+            ],
+            "root": "appDataLocal",
+            "section": "SystemSettings",
+            "values": {}
+          }
+        ],
+        "status": "untested",
+        "runtimeID": "hadron-wine-arm64",
+        "runtimeVersion": "0.3.0-wine-11.18-273-g4b68dfdadf",
+        "buildID": "",
+        "date": "",
+        "recommended": false,
+        "checks": [
+          {
+            "name": "Launch to menu",
+            "result": "pending"
+          },
+          {
+            "name": "Rendering in gameplay",
+            "result": "pending"
+          },
+          {
+            "name": "Long session with save, quit and reload",
+            "result": "pending"
+          },
+          {
+            "name": "Audio and controller",
+            "result": "pending"
+          }
+        ],
+        "limits": [
+          "Example configuration only; no compatibility result is supplied."
+        ]
+      },
+      "dx12": {
+        "configurationName": "Direct3D 12 · vkd3d-proton (experimental)",
+        "renderer": "vkd3d-proton on KosmicKrisp (Hadron) · Direct3D 12 via Vulkan",
+        "rendererKind": "vkd3d",
+        "launchArguments": [
+          "-dx12"
+        ],
+        "dllOverrides": {
+          "d3d12": "native,builtin",
+          "d3d12core": "native,builtin"
+        },
+        "configFileEdits": [
+          {
+            "path": "HellbladeGame/Saved/Config/WindowsNoEditor/Engine.ini",
+            "removeKeys": [],
+            "root": "appDataLocal",
+            "section": "SystemSettings",
+            "values": {
+              "D3D12.PSO.StallTimeoutInMs": "60000",
+              "r.ShaderPipelineCache.Enabled": "1",
+              "r.ShaderPipelineCache.LogPSO": "1",
+              "r.ShaderPipelineCache.PreOptimizeEnabled": "1",
+              "r.ShaderPipelineCache.SaveAfterPSOsLogged": "100",
+              "r.ShaderPipelineCache.SaveUserCache": "1"
+            }
+          }
+        ],
+        "status": "untested",
+        "runtimeID": "hadron-wine-arm64",
+        "runtimeVersion": "0.3.0-wine-11.18-273-g4b68dfdadf",
+        "buildID": "",
+        "date": "",
+        "recommended": false,
+        "checks": [
+          {
+            "name": "Launch to menu",
+            "result": "pending"
+          },
+          {
+            "name": "Rendering in gameplay",
+            "result": "pending"
+          },
+          {
+            "name": "Long session with save, quit and reload",
+            "result": "pending"
+          },
+          {
+            "name": "Audio and controller",
+            "result": "pending"
+          }
+        ],
+        "limits": [
+          "Example configuration only; no compatibility result is supplied."
+        ]
+      }
+    }
+  },
+  "selectedConfigurations": {
+    "fex": "dx11"
+  }
+}

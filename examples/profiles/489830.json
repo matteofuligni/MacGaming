@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "appID": "489830",
+  "name": "The Elder Scrolls V: Skyrim Special Edition",
+  "engines": {
+    "fex": {
+      "configurationName": "Direct3D 11 · DXMT",
+      "renderer": "DXMT (Hadron) · Direct3D 11 feature level 11_0",
+      "rendererKind": "dxmt",
+      "status": "untested",
+      "runtimeID": "hadron-wine-arm64",
+      "runtimeVersion": "0.3.0-wine-11.18-273-g4b68dfdadf",
+      "buildID": "",
+      "date": "",
+      "recommended": false,
+      "checks": [
+        {
+          "name": "Launch to menu",
+          "result": "pending"
+        },
+        {
+          "name": "Rendering in gameplay",
+          "result": "pending"
+        },
+        {
+          "name": "Long session with save, quit and reload",
+          "result": "pending"
+        },
+        {
+          "name": "Audio and controller",
+          "result": "pending"
+        }
+      ],
+      "limits": [
+        "Example configuration only; no compatibility result is supplied."
+      ]
+    },
+    "rosetta": {
+      "configurationName": "Rosetta · Wine default (blocked)",
+      "renderer": "Wine Direct3D 11 (wined3d); DXMT 0.80 cannot create swap chains on this Wine",
+      "status": "untested",
+      "runtimeID": "wine-stable",
+      "runtimeVersion": "11.0_1",
+      "buildID": "",
+      "date": "",
+      "recommended": false,
+      "checks": [
+        {
+          "name": "Launch to menu",
+          "result": "pending"
+        },
+        {
+          "name": "Rendering in gameplay",
+          "result": "pending"
+        },
+        {
+          "name": "Long session with save, quit and reload",
+          "result": "pending"
+        },
+        {
+          "name": "Audio and controller",
+          "result": "pending"
+        }
+      ],
+      "limits": [
+        "Example configuration only; no compatibility result is supplied."
+      ]
+    }
+  },
+  "configurations": {
+    "fex": {
+      "dx11": {
+        "configurationName": "Direct3D 11 · DXMT",
+        "renderer": "DXMT (Hadron) · Direct3D 11 feature level 11_0",
+        "rendererKind": "dxmt",
+        "status": "untested",
+        "runtimeID": "hadron-wine-arm64",
+        "runtimeVersion": "0.3.0-wine-11.18-273-g4b68dfdadf",
+        "buildID": "",
+        "date": "",
+        "recommended": false,
+        "checks": [
+          {
+            "name": "Launch to menu",
+            "result": "pending"
+          },
+          {
+            "name": "Rendering in gameplay",
+            "result": "pending"
+          },
+          {
+            "name": "Long session with save, quit and reload",
+            "result": "pending"
+          },
+          {
+            "name": "Audio and controller",
+            "result": "pending"
+          }
+        ],
+        "limits": [
+          "Example configuration only; no compatibility result is supplied."
+        ]
+      }
+    },
+    "rosetta": {
+      "legacy": {
+        "configurationName": "Rosetta · Wine default (blocked)",
+        "renderer": "Wine Direct3D 11 (wined3d); DXMT 0.80 cannot create swap chains on this Wine",
+        "status": "untested",
+        "runtimeID": "wine-stable",
+        "runtimeVersion": "11.0_1",
+        "buildID": "",
+        "date": "",
+        "recommended": false,
+        "checks": [
+          {
+            "name": "Launch to menu",
+            "result": "pending"
+          },
+          {
+            "name": "Rendering in gameplay",
+            "result": "pending"
+          },
+          {
+            "name": "Long session with save, quit and reload",
+            "result": "pending"
+          },
+          {
+            "name": "Audio and controller",
+            "result": "pending"
+          }
+        ],
+        "limits": [
+          "Example configuration only; no compatibility result is supplied."
+        ]
+      }
+    }
+  },
+  "selectedConfigurations": {
+    "fex": "dx11",
+    "rosetta": "legacy"
+  }
+}

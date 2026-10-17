@@ -1,0 +1,315 @@
+{
+  "scope": "Every file revision in all refs and reflogs; values of identities and secrets are omitted.",
+  "commitCount": 2,
+  "distinctPaths": 57,
+  "uniqueBlobs": 75,
+  "historyExported": false,
+  "reason": "Private commit identities and historical local paths must not be published.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "docs/DEVELOPMENT.md",
+      "revisions": 1,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "docs/PIANO_MACGAMING.md",
+      "revisions": 2,
+      "publication": "excluded-private-or-historical"
+    },
+    {
+      "path": "docs/hellblade-dx11.md",
+      "revisions": 2,
+      "publication": "excluded-private-or-historical"
+    },
+    {
+      "path": "docs/hellblade-dx12-performance.md",
+      "revisions": 2,
+      "publication": "excluded-private-or-historical"
+    },
+    {
+      "path": "manifests/component-dxmt.json",
+      "revisions": 2,
+      "publication": "replaced-by-settings-only-example",
+      "replacement": "examples/manifests/component-dxmt.json"
+    },
+    {
+      "path": "manifests/runtime-fex.json",
+      "revisions": 2,
+      "publication": "replaced-by-settings-only-example",
+      "replacement": "examples/manifests/runtime-fex.json"
+    },
+    {
+      "path": "manifests/runtime-rosetta.json",
+      "revisions": 2,
+      "publication": "replaced-by-settings-only-example",
+      "replacement": "examples/manifests/runtime-rosetta.json"
+    },
+    {
+      "path": "manifests/steam-installer.json",
+      "revisions": 2,
+      "publication": "replaced-by-settings-only-example",
+      "replacement": "examples/manifests/steam-installer.json"
+    },
+    {
+      "path": "manifests/toolchain-llvm-mingw.json",
+      "revisions": 2,
+      "publication": "replaced-by-settings-only-example",
+      "replacement": "examples/manifests/toolchain-llvm-mingw.json"
+    },
+    {
+      "path": "profiles/1151640.json",
+      "revisions": 1,
+      "publication": "replaced-by-settings-only-example",
+      "replacement": "examples/profiles/1151640.json"
+    },
+    {
+      "path": "profiles/12120.json",
+      "revisions": 2,
+      "publication": "replaced-by-settings-only-example",
+      "replacement": "examples/profiles/12120.json"
+    },
+    {
+      "path": "profiles/211420.json",
+      "revisions": 1,
+      "publication": "replaced-by-settings-only-example",
+      "replacement": "examples/profiles/211420.json"
+    },
+    {
+      "path": "profiles/3240220.json",
+      "revisions": 1,
+      "publication": "replaced-by-settings-only-example",
+      "replacement": "examples/profiles/3240220.json"
+    },
+    {
+      "path": "profiles/335300.json",
+      "revisions": 1,
+      "publication": "replaced-by-settings-only-example",
+      "replacement": "examples/profiles/335300.json"
+    },
+    {
+      "path": "profiles/414340.json",
+      "revisions": 2,
+      "publication": "replaced-by-settings-only-example",
+      "replacement": "examples/profiles/414340.json"
+    },
+    {
+      "path": "profiles/489830.json",
+      "revisions": 2,
+      "publication": "replaced-by-settings-only-example",
+      "replacement": "examples/profiles/489830.json"
+    },
+    {
+      "path": "source/Package.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/README.md",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/STATO.md",
+      "revisions": 2,
+      "publication": "excluded-private-or-historical"
+    },
+    {
+      "path": "source/Sources/MacGamingApp/GameDetailView.swift",
+      "revisions": 1,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Sources/MacGamingApp/MacGamingApp.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Sources/MacGamingCLI/main.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Sources/MacGamingCore/Components.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Sources/MacGamingCore/Configurations.swift",
+      "revisions": 1,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Sources/MacGamingCore/DXMT.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Sources/MacGamingCore/Diagnostics.swift",
+      "revisions": 1,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Sources/MacGamingCore/Engine.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Sources/MacGamingCore/GameFiles.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Sources/MacGamingCore/GameTransfer.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Sources/MacGamingCore/Library.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Sources/MacGamingCore/PerformanceOverlay.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Sources/MacGamingCore/Profiles.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Sources/MacGamingCore/Renderers.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Sources/MacGamingCore/Runtime.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Sources/MacGamingCore/Saves.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Sources/MacGamingCore/Session.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Sources/MacGamingCore/Storage.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Sources/MacGamingCore/WebHelper.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Tests/MacGamingCoreTests/ComponentTests.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Tests/MacGamingCoreTests/ConfigurationTransactionTests.swift",
+      "revisions": 1,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Tests/MacGamingCoreTests/CoreTests.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Tests/MacGamingCoreTests/PerformanceOverlayTests.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Tests/MacGamingCoreTests/ProfileTests.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Tests/MacGamingCoreTests/ReliabilityTests.swift",
+      "revisions": 1,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/Tests/MacGamingCoreTests/RendererTests.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/build.sh",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/icon/AppIcon.icns",
+      "revisions": 2,
+      "publication": "generated-binary-excluded",
+      "replacement": "source/icon/make-icon.swift"
+    },
+    {
+      "path": "source/icon/make-icon.swift",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/probes/d3d11-probe.c",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/probes/display-modes-probe.c",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/probes/gtasa-multiplyadd-probe.c",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/shims/README.md",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/shims/gtasa-mtld3d.c",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/shims/winegstreamer-stub.c",
+      "revisions": 2,
+      "publication": "included-current-version"
+    },
+    {
+      "path": "source/tools/migrate-profiles.py",
+      "revisions": 1,
+      "publication": "excluded-private-or-historical"
+    },
+    {
+      "path": "source/wrapper/steamwebhelper-wrapper.c",
+      "revisions": 2,
+      "publication": "included-current-version"
+    }
+  ],
+  "findingCounts": {
+    "home-relative-path": 3,
+    "local-device-record": 16,
+    "local-identity": 35,
+    "steam-account": 2
+  },
+  "secretFindingReview": "Steam-account-shaped values in the old tests were synthetic fixtures; no high-confidence live credential pattern was found. This is a bounded scan, not proof that arbitrary free text cannot contain a secret."
+}

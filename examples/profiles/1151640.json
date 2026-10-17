@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 2,
+  "appID": "1151640",
+  "name": "Horizon Zero Dawn™ Complete Edition",
+  "engines": {
+    "fex": {
+      "configurationName": "Direct3D 12 · vkd3d-proton",
+      "renderer": "Direct3D 12 · vkd3d-proton",
+      "rendererKind": "vkd3d",
+      "launchArguments": [],
+      "dllOverrides": {},
+      "status": "untested",
+      "runtimeID": "hadron-wine-arm64",
+      "runtimeVersion": "0.3.0-wine-11.18-273-g4b68dfdadf",
+      "buildID": "",
+      "date": "",
+      "recommended": false,
+      "checks": [
+        {
+          "name": "Launch to menu",
+          "result": "pending"
+        },
+        {
+          "name": "Rendering in gameplay",
+          "result": "pending"
+        },
+        {
+          "name": "Long session with save, quit and reload",
+          "result": "pending"
+        },
+        {
+          "name": "Audio and controller",
+          "result": "pending"
+        }
+      ],
+      "limits": [
+        "Example configuration only; no compatibility result is supplied."
+      ]
+    }
+  },
+  "configurations": {
+    "fex": {
+      "vkd3d": {
+        "configurationName": "Direct3D 12 · vkd3d-proton",
+        "renderer": "Direct3D 12 · vkd3d-proton",
+        "rendererKind": "vkd3d",
+        "launchArguments": [],
+        "dllOverrides": {},
+        "status": "untested",
+        "runtimeID": "hadron-wine-arm64",
+        "runtimeVersion": "0.3.0-wine-11.18-273-g4b68dfdadf",
+        "buildID": "",
+        "date": "",
+        "recommended": false,
+        "checks": [
+          {
+            "name": "Launch to menu",
+            "result": "pending"
+          },
+          {
+            "name": "Rendering in gameplay",
+            "result": "pending"
+          },
+          {
+            "name": "Long session with save, quit and reload",
+            "result": "pending"
+          },
+          {
+            "name": "Audio and controller",
+            "result": "pending"
+          }
+        ],
+        "limits": [
+          "Example configuration only; no compatibility result is supplied."
+        ]
+      }
+    }
+  },
+  "selectedConfigurations": {
+    "fex": "vkd3d"
+  }
+}

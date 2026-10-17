@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 2,
+  "appID": "335300",
+  "name": "DARK SOULS™ II: Scholar of the First Sin",
+  "engines": {
+    "fex": {
+      "configurationName": "Direct3D 11 · DXMT",
+      "renderer": "Direct3D 11 · DXMT",
+      "rendererKind": "dxmt",
+      "launchArguments": [],
+      "dllOverrides": {},
+      "status": "untested",
+      "runtimeID": "hadron-wine-arm64",
+      "runtimeVersion": "0.3.0-wine-11.18-273-g4b68dfdadf",
+      "buildID": "",
+      "date": "",
+      "recommended": false,
+      "checks": [
+        {
+          "name": "Launch to menu",
+          "result": "pending"
+        },
+        {
+          "name": "Rendering in gameplay",
+          "result": "pending"
+        },
+        {
+          "name": "Long session with save, quit and reload",
+          "result": "pending"
+        },
+        {
+          "name": "Audio and controller",
+          "result": "pending"
+        }
+      ],
+      "limits": [
+        "Example configuration only; no compatibility result is supplied."
+      ]
+    }
+  },
+  "configurations": {
+    "fex": {
+      "dxmt": {
+        "configurationName": "Direct3D 11 · DXMT",
+        "renderer": "Direct3D 11 · DXMT",
+        "rendererKind": "dxmt",
+        "launchArguments": [],
+        "dllOverrides": {},
+        "status": "untested",
+        "runtimeID": "hadron-wine-arm64",
+        "runtimeVersion": "0.3.0-wine-11.18-273-g4b68dfdadf",
+        "buildID": "",
+        "date": "",
+        "recommended": false,
+        "checks": [
+          {
+            "name": "Launch to menu",
+            "result": "pending"
+          },
+          {
+            "name": "Rendering in gameplay",
+            "result": "pending"
+          },
+          {
+            "name": "Long session with save, quit and reload",
+            "result": "pending"
+          },
+          {
+            "name": "Audio and controller",
+            "result": "pending"
+          }
+        ],
+        "limits": [
+          "Example configuration only; no compatibility result is supplied."
+        ]
+      }
+    }
+  },
+  "selectedConfigurations": {
+    "fex": "dxmt"
+  }
+}

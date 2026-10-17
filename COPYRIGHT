@@ -1,0 +1,20 @@
+MacGaming original code, documentation, configuration examples and original icon:
+Copyright (C) 2026 MacGaming contributors
+SPDX-License-Identifier: GPL-3.0-or-later
+
+MacGaming is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later version.
+
+MacGaming is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+A PARTICULAR PURPOSE. See LICENSE for the complete GNU General Public License.
+
+The Steam web helper wrapper contains code adapted from steam-on-m1-wine,
+Copyright (c) 2026 notpop, under the MIT License. Its original notice and permission
+are retained in LICENSES/steam-on-m1-wine-MIT.txt. MacGaming's modifications to
+the wrapper are distributed under GPL-3.0-or-later.
+
+Third-party license texts, notices, external projects and operating-system
+frameworks retain their own copyright and terms. They are not relicensed by
+this declaration. See THIRD_PARTY_NOTICES.md and docs/LICENSING.md.

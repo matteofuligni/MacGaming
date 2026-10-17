@@ -1,0 +1,2181 @@
+{
+  "reviewDate": "2026-10-17",
+  "scope": "Inventory of every supplied Hadron license/notice file and llvm-mingw license file; hints identify text families, not a substitute for each component grant.",
+  "hadronSource": "https://github.com/Broyojo/hadron/tree/2faae2af7dbcd0b6448bea5c86c20c33548a792c",
+  "records": [
+    {
+      "group": "hadron-0.3.0",
+      "file": "THIRD-PARTY-NOTICES.md",
+      "sha256": "b3ceac4ceaac9f03ebb45881b387da7d0678d589c55de6373555eb3fcfef22fc",
+      "bytes": 7390,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "dxmt/COPYING.LIB",
+      "sha256": "e237fa56668030e928551ddd60f05df5fe957f75eab874bbd017e085ed722e7c",
+      "bytes": 26434,
+      "licenseTextHints": [
+        "LGPL-2.1"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "dxmt/LICENSE",
+      "sha256": "b87c35aef7b2cf14de854118ca55ce5c4b284c85b5f002421fb8d46d868c2d17",
+      "bytes": 782,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "dxmt/vendored/external-nvapi-License.txt",
+      "sha256": "bab44777f0f4d0333479ea0be6e24c084464a8cb64b98f1253fcc3df70f6eccf",
+      "bytes": 1217,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "dxvk/LICENSE",
+      "sha256": "a5cb1a6ded7d2d7e92d550ba28edd21be2d1d4044662b399887351023e30ce64",
+      "bytes": 1074,
+      "licenseTextHints": [
+        "zlib"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "dxvk/vendored/subprojects-dxbc-spirv-LICENSE",
+      "sha256": "0f8a5e687bea942a30a8e39b9915294fbe44eca866e71307a9b7083ee0e69ad8",
+      "bytes": 1071,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "dxvk/vendored/subprojects-dxbc-spirv-submodules-spirv_headers-LICENSE",
+      "sha256": "ea43b1de38a6f90c488800d66dec1ed671e68cda530266bc96951fb5b6307613",
+      "bytes": 23503,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "dxvk/vendored/subprojects-libdisplay-info-LICENSE",
+      "sha256": "15b396244e58830c5614b9394f4deccfe684970cd507f299383ab57ad339eedd",
+      "bytes": 1089,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/LICENSE",
+      "sha256": "f34a779f56b36d22b20e1b990d23e583a6a7ca071331925fa46156441c77a1ee",
+      "bytes": 1094,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-Catch2-LICENSE.txt",
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+      "bytes": 1338,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-Vulkan-Headers-LICENSE.md",
+      "sha256": "95ad366d23fadf701d355bc45fb8b82ae2d700239471d35d41286ac3b08ff903",
+      "bytes": 495,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-cephes-LICENSE",
+      "sha256": "edf1440b625e6d434a986cdb535c702001afab8959d94ce6275441a58cfd0ebb",
+      "bytes": 4754,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-fex-posixtest-bins-src-COPYING",
+      "sha256": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670",
+      "bytes": 17992,
+      "licenseTextHints": [
+        "GPL-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-fmt-LICENSE",
+      "sha256": "a65fcc5a1095fc33cc37e4fff69366e49d7e92f613558a2b95ed1b70e33758b4",
+      "bytes": 1094,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-fmt-doc-LICENSE-exception",
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8",
+      "bytes": 1431,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-jemalloc_glibc-COPYING",
+      "sha256": "94aa2caa98c25d942f58b956c71dba6a99ff98fc3a31cbc669fe2a4cd0268b53",
+      "bytes": 1709,
+      "licenseTextHints": [
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-range-v3-LICENSE.txt",
+      "sha256": "2b74ee37dd1a90b2b385534b7dbc171938409bda468673a123ff25302c9c5739",
+      "bytes": 7233,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-rpmalloc-LICENSE",
+      "sha256": "9fdc653aacc736bef0cd12854f4a8d94f703ec5603fb5dca1be945b7f679918c",
+      "bytes": 606,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-tiny-json-LICENSE",
+      "sha256": "83c6abf07e7123427303b5f12cd995122c372a5cb96815ec130a18628396fb7c",
+      "bytes": 1068,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-tracy-LICENSE",
+      "sha256": "16f7df4828bd89c880c17dd2f45e834b754b6d5e8c9a9ee886af1be4b89475ca",
+      "bytes": 1618,
+      "licenseTextHints": [
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-tracy-examples-ToyPathTracer-license.md",
+      "sha256": "88d9b4eb60579c191ec391ca04c16130572d7eedc4a86daa58bf28c6e14c9bcd",
+      "bytes": 1210,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-tracy-public-libbacktrace-LICENSE",
+      "sha256": "ef8a9b3247488f8901ca60de9b17b745d7bd67e5ec1e622f80d62364572200d8",
+      "bytes": 1478,
+      "licenseTextHints": [
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-unordered_dense-LICENSE",
+      "sha256": "4f5a62734899ec0ba85d3e8264a7ed1fcb4bcb8f0b4359c0afd627b6314ae599",
+      "bytes": 1078,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-vixl-LICENCE",
+      "sha256": "11752b98d1c8e77c774fe092219e7faa0865bb77bdb741b71b123b26fc896ea5",
+      "bytes": 1645,
+      "licenseTextHints": [
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-xxhash-LICENSE",
+      "sha256": "6ffedbc0f7878612d2b23589f1ff2ab15633e1df7963a5d9fc750ec5500c7e7a",
+      "bytes": 1389,
+      "licenseTextHints": [
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-xxhash-cli-COPYING",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "bytes": 18092,
+      "licenseTextHints": [
+        "GPL-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-xxhash-tests-bench-LICENSE",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "bytes": 18092,
+      "licenseTextHints": [
+        "GPL-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-xxhash-tests-collisions-LICENSE",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "bytes": 18092,
+      "licenseTextHints": [
+        "GPL-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-zydis-LICENSE",
+      "sha256": "e5e99718209e94baaf3e9cbf6f64aa3329c9e73c63b1ab47e10f29d81974e6f3",
+      "bytes": 1122,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "fex/vendored/External-zydis-dependencies-zycore-LICENSE",
+      "sha256": "7991ec4481a82c51d196f7440fda34c578aab51f8b9c7023935c6e03b57638bd",
+      "bytes": 1122,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "ffmpeg/COPYING.LGPLv2.1",
+      "sha256": "246041b6ecf9bc32d718a62c57877c78b5eb397b6467e74ed7ae2626ab189c30",
+      "bytes": 26517,
+      "licenseTextHints": [
+        "LGPL-2.1"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "ffmpeg/LICENSE.md",
+      "sha256": "2e1d16c72fd74e12063776371da757322f8b77589386532f4fd8634bde7de1af",
+      "bytes": 4346,
+      "licenseTextHints": [
+        "GPL-2.0",
+        "LGPL-2.1"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "freetype/LICENSE.TXT",
+      "sha256": "bd36c8b474855fa294c2ec5c184544478ef3720aad37d65a6296a4f264fd2d3b",
+      "bytes": 2149,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "gettext/COPYING",
+      "sha256": "e79e9c8a0c85d735ff98185918ec94ed7d175efc377012787aebcf3b80f0d90b",
+      "bytes": 35151,
+      "licenseTextHints": [
+        "GPL-3.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "gmp/COPYING",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "bytes": 35147,
+      "licenseTextHints": [
+        "GPL-3.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "gmp/COPYING.LESSERv3",
+      "sha256": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c",
+      "bytes": 7639,
+      "licenseTextHints": [
+        "LGPL-3.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "gnutls/COPYING",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149,
+      "licenseTextHints": [
+        "GPL-3.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "gnutls/COPYING.LESSERv2",
+      "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95",
+      "bytes": 26419,
+      "licenseTextHints": [
+        "LGPL-2.1"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "hadron/LICENSE",
+      "sha256": "3c0a116483c2096b550af926a7d78b5e3cebe22fffff87f2678da213d8de569b",
+      "bytes": 644,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "hadron/LICENSE.hadron",
+      "sha256": "6b9161cd8638bcc6e1aec65385e08e2b5140f2ae7956db560f5bc1aeca417c0e",
+      "bytes": 1484,
+      "licenseTextHints": [
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "libidn2/COPYING",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149,
+      "licenseTextHints": [
+        "GPL-3.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "libidn2/COPYING.LESSERv3",
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118",
+      "bytes": 7652,
+      "licenseTextHints": [
+        "LGPL-3.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "libidn2/COPYING.unicode",
+      "sha256": "01d621eef165cf4d3d3dbb737aa0699178d94c6f18cf87e9dde6db3ca7790f46",
+      "bytes": 8782,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "libpng/LICENSE",
+      "sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526",
+      "bytes": 5345,
+      "licenseTextHints": [
+        "zlib"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "libtasn1/COPYING",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149,
+      "licenseTextHints": [
+        "GPL-3.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "libtasn1/COPYING.LESSERv2",
+      "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95",
+      "bytes": 26419,
+      "licenseTextHints": [
+        "LGPL-2.1"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "libunistring/COPYING",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149,
+      "licenseTextHints": [
+        "GPL-3.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "libunistring/COPYING.LIB",
+      "sha256": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c",
+      "bytes": 7639,
+      "licenseTextHints": [
+        "LGPL-3.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "libusb/COPYING",
+      "sha256": "5df07007198989c622f5d41de8d703e7bef3d0e79d62e24332ee739a452af62a",
+      "bytes": 26436,
+      "licenseTextHints": [
+        "LGPL-2.1"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "llvm15/LICENSE.TXT",
+      "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee",
+      "bytes": 15141,
+      "licenseTextHints": [
+        "MIT",
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mesa/licenses/Apache-2.0",
+      "sha256": "7e4d3fba250d15e9e0afa380d4b611828fa2560cc8fdebe95bcf2f01a487de12",
+      "bytes": 10045,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mesa/licenses/BSL-1.0",
+      "sha256": "9b9fea7520a816107fcac2598b7c0155222f16bc430e989706b22f4367f1df7d",
+      "bytes": 1649,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mesa/licenses/GPL-1.0-or-later",
+      "sha256": "8ff76f1528e6e4e9400c0f6b1f2d19d4979aaac3bcc44bb707a55389132825c4",
+      "bytes": 13047,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mesa/licenses/GPL-2.0-only",
+      "sha256": "6667ad4063569cd53b13500550d93fcd3dc11bcf82c5514296af013a0b720ba5",
+      "bytes": 18424,
+      "licenseTextHints": [
+        "GPL-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mesa/licenses/MIT",
+      "sha256": "323c587d0ccf10e376f8bf9a7f31fb4ca6078105194b42e0b1e0ee2bc9bde71f",
+      "bytes": 1372,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mesa/licenses/SGI-B-2.0",
+      "sha256": "686bf035a1fd22076416fd3b90370ac67771e884bf57f55693d51f8ce7c710a7",
+      "bytes": 1822,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mesa/licenses/exceptions/Linux-Syscall-Note",
+      "sha256": "9b4084655174654608fd037e9ddb4feeadfada01cd042e9c17b05aa7105b2b9f",
+      "bytes": 1257,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/LICENSE",
+      "sha256": "34218a98a2bc21b4624a0bd755d47d5fd0f4478090a3139cc1da887849dccb27",
+      "bytes": 859,
+      "licenseTextHints": [
+        "zlib"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/aho-corasick-1.1.5/COPYING",
+      "sha256": "01c266bced4a434da0051174d6bee16a4c82cf634e2679b6155d40d75012390f",
+      "bytes": 126,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/aho-corasick-1.1.5/LICENSE-MIT",
+      "sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f",
+      "bytes": 1081,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/anstream-1.0.0/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+      "bytes": 11358,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/anstream-1.0.0/LICENSE-MIT",
+      "sha256": "6efb0476a1cc085077ed49357026d8c173bf33017278ef440f222fb9cbcb66e6",
+      "bytes": 1062,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/anstyle-1.0.14/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+      "bytes": 11358,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/anstyle-1.0.14/LICENSE-MIT",
+      "sha256": "6efb0476a1cc085077ed49357026d8c173bf33017278ef440f222fb9cbcb66e6",
+      "bytes": 1062,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/anstyle-parse-1.0.0/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+      "bytes": 11358,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/anstyle-parse-1.0.0/LICENSE-MIT",
+      "sha256": "6efb0476a1cc085077ed49357026d8c173bf33017278ef440f222fb9cbcb66e6",
+      "bytes": 1062,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/anstyle-query-1.1.5/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+      "bytes": 11358,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/anstyle-query-1.1.5/LICENSE-MIT",
+      "sha256": "6efb0476a1cc085077ed49357026d8c173bf33017278ef440f222fb9cbcb66e6",
+      "bytes": 1062,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/anstyle-wincon-3.0.11/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+      "bytes": 11358,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/anstyle-wincon-3.0.11/LICENSE-MIT",
+      "sha256": "6efb0476a1cc085077ed49357026d8c173bf33017278ef440f222fb9cbcb66e6",
+      "bytes": 1062,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/bitflags-1.3.2/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/bitflags-1.3.2/LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb",
+      "bytes": 1071,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/bitflags-2.13.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/bitflags-2.13.1/LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb",
+      "bytes": 1071,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/cc-1.4.4/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/cc-1.4.4/LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397",
+      "bytes": 1057,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/cc-1.5.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/cc-1.5.1/LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397",
+      "bytes": 1057,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/cfg-if-1.0.4/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/cfg-if-1.0.4/LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397",
+      "bytes": 1057,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/cmake-0.1.58/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/cmake-0.1.58/LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397",
+      "bytes": 1057,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/colorchoice-1.0.5/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+      "bytes": 11358,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/colorchoice-1.0.5/LICENSE-MIT",
+      "sha256": "6efb0476a1cc085077ed49357026d8c173bf33017278ef440f222fb9cbcb66e6",
+      "bytes": 1062,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/defmt-1.1.1/LICENSE-APACHE",
+      "sha256": "8173d5c29b4f956d532781d2b86e4e30f83e6b7878dce18c919451d6ba707c90",
+      "bytes": 10850,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/defmt-1.1.1/LICENSE-MIT",
+      "sha256": "2710a622a896bba67356913d4d0492cab5465f61b2ecce6d880aeb483834fb50",
+      "bytes": 1053,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/defmt-macros-1.1.1/LICENSE-APACHE",
+      "sha256": "8173d5c29b4f956d532781d2b86e4e30f83e6b7878dce18c919451d6ba707c90",
+      "bytes": 10850,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/defmt-macros-1.1.1/LICENSE-MIT",
+      "sha256": "2710a622a896bba67356913d4d0492cab5465f61b2ecce6d880aeb483834fb50",
+      "bytes": 1053,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/env_filter-2.0.0/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+      "bytes": 11358,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/env_filter-2.0.0/LICENSE-MIT",
+      "sha256": "6efb0476a1cc085077ed49357026d8c173bf33017278ef440f222fb9cbcb66e6",
+      "bytes": 1062,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/env_logger-0.11.11/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+      "bytes": 11358,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/env_logger-0.11.11/LICENSE-MIT",
+      "sha256": "6efb0476a1cc085077ed49357026d8c173bf33017278ef440f222fb9cbcb66e6",
+      "bytes": 1062,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/find-msvc-tools-0.1.11/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/find-msvc-tools-0.1.11/LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397",
+      "bytes": 1057,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/find-msvc-tools-0.1.14/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/find-msvc-tools-0.1.14/LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397",
+      "bytes": 1057,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/getrandom-0.4.3/LICENSE-APACHE",
+      "sha256": "aaff376532ea30a0cd5330b9502ad4a4c8bf769c539c87ffe78819d188a18ebf",
+      "bytes": 10849,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/getrandom-0.4.3/LICENSE-MIT",
+      "sha256": "523a42c25d245dde9c015f882cec7f4555aad883382a6cf19b4b7d9b2cd5419b",
+      "bytes": 1130,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/heck-0.5.0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/heck-0.5.0/LICENSE-MIT",
+      "sha256": "7b63ecd5f1902af1b63729947373683c32745c16a10e8e6292e2e2dcd7e90ae0",
+      "bytes": 1071,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/is_terminal_polyfill-1.70.2/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+      "bytes": 11358,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/is_terminal_polyfill-1.70.2/LICENSE-MIT",
+      "sha256": "6efb0476a1cc085077ed49357026d8c173bf33017278ef440f222fb9cbcb66e6",
+      "bytes": 1062,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/jiff-0.2.35/COPYING",
+      "sha256": "01c266bced4a434da0051174d6bee16a4c82cf634e2679b6155d40d75012390f",
+      "bytes": 126,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/jiff-0.2.35/LICENSE-MIT",
+      "sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f",
+      "bytes": 1081,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/jiff-core-0.1.0/COPYING",
+      "sha256": "01c266bced4a434da0051174d6bee16a4c82cf634e2679b6155d40d75012390f",
+      "bytes": 126,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/jiff-core-0.1.0/LICENSE-MIT",
+      "sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f",
+      "bytes": 1081,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/jobserver-0.1.35/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/jobserver-0.1.35/LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397",
+      "bytes": 1057,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/libc-0.2.189/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/libc-0.2.189/LICENSE-MIT",
+      "sha256": "123a331b5dbf04c30097fa43b8f858bc85df671fe776de498d01f3d6b7c1f69e",
+      "bytes": 1066,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/libloading-0.9.0/LICENSE",
+      "sha256": "b29f8b01452350c20dd1af16ef83b598fea3053578ccc1c7a0ef40e57be2620f",
+      "bytes": 736,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/log-0.4.34/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/log-0.4.34/LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb",
+      "bytes": 1071,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/memchr-2.8.3/COPYING",
+      "sha256": "01c266bced4a434da0051174d6bee16a4c82cf634e2679b6155d40d75012390f",
+      "bytes": 126,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/memchr-2.8.3/LICENSE-MIT",
+      "sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f",
+      "bytes": 1081,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/once_cell_polyfill-1.70.2/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+      "bytes": 11358,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/once_cell_polyfill-1.70.2/LICENSE-MIT",
+      "sha256": "6efb0476a1cc085077ed49357026d8c173bf33017278ef440f222fb9cbcb66e6",
+      "bytes": 1062,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/pkg-config-0.3.34/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/pkg-config-0.3.34/LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397",
+      "bytes": 1057,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/portable-atomic-1.15.0/LICENSE-APACHE",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "bytes": 10174,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/portable-atomic-1.15.0/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/proc-macro2-1.0.107/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/proc-macro2-1.0.107/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/quote-1.0.47/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/quote-1.0.47/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/regex-1.13.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/regex-1.13.1/LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb",
+      "bytes": 1071,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/regex-automata-0.4.18/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/regex-automata-0.4.18/LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb",
+      "bytes": 1071,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/regex-syntax-0.8.11/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/regex-syntax-0.8.11/LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb",
+      "bytes": 1071,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/rustc-hash-2.1.3/LICENSE-APACHE",
+      "sha256": "95bd3988beee069fa2848f648dab43cc6e0b2add2ad6bcb17360caf749802bcc",
+      "bytes": 9722,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/rustc-hash-2.1.3/LICENSE-MIT",
+      "sha256": "30fefc3a7d6a0041541858293bcbea2dde4caa4c0a5802f996a7f7e8c0085652",
+      "bytes": 1022,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/serde_core-1.0.229/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/serde_core-1.0.229/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/serde_derive-1.0.229/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/serde_derive-1.0.229/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/shlex-2.0.1/LICENSE-APACHE",
+      "sha256": "553fffcd9b1cb158bc3e9edc35da85ca5c3b3d7d2e61c883ebcfa8a65814b583",
+      "bytes": 566,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/shlex-2.0.1/LICENSE-MIT",
+      "sha256": "4455bf75a91154108304cb283e0fea9948c14f13e20d60887cf2552449dea3b1",
+      "bytes": 1092,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/strum-0.28.0/LICENSE",
+      "sha256": "8bce3b45e49ecd1461f223b46de133d8f62cd39f745cfdaf81bee554b908bd42",
+      "bytes": 1072,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/strum_macros-0.28.0/LICENSE",
+      "sha256": "8bce3b45e49ecd1461f223b46de133d8f62cd39f745cfdaf81bee554b908bd42",
+      "bytes": 1072,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/syn-2.0.119/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/syn-2.0.119/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/syn-3.0.4/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/syn-3.0.4/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/thiserror-2.0.20/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/thiserror-2.0.20/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/thiserror-impl-2.0.20/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/thiserror-impl-2.0.20/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/unicode-ident-1.0.24/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/unicode-ident-1.0.24/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/unicode-ident-1.0.24/LICENSE-UNICODE",
+      "sha256": "f7db81051789b729fea528a63ec4c938fdcb93d9d61d97dc8cc2e9df6d47f2a1",
+      "bytes": 1995,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/utf8parse-0.2.2/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/utf8parse-0.2.2/LICENSE-MIT",
+      "sha256": "e4c9b06fa850cb9b540a5e400e9f6394cf15efcf4098144de477d1d3dae10150",
+      "bytes": 1052,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/windows-link-0.2.1/license-apache-2.0",
+      "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "bytes": 11351,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/windows-link-0.2.1/license-mit",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/windows-sys-0.61.2/license-apache-2.0",
+      "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "bytes": 11351,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/windows-sys-0.61.2/license-mit",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/xbr-0.2.4/LICENSE-MIT",
+      "sha256": "ca1a0b81e81b9273331415b21b2d5c91c91c4129553d769ffe3386685bd8bd53",
+      "bytes": 1065,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/xxhash-rust-0.8.19/LICENSE",
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+      "bytes": 1338,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/zstd-0.13.3/LICENSE",
+      "sha256": "129e8edef29e9abcd2ebabe252f4ef1b1289cdca356bf0040284a2fbccfb96c8",
+      "bytes": 1080,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/zstd-safe-7.2.4/LICENSE",
+      "sha256": "a77b7cfeaf911ed410ffbe76f0cb2b24ad8a4d94e7ead5727e914425c416cc63",
+      "bytes": 18,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/zstd-safe-7.2.4/LICENSE.Apache-2.0",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "bytes": 10174,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/zstd-safe-7.2.4/LICENSE.Mit",
+      "sha256": "129e8edef29e9abcd2ebabe252f4ef1b1289cdca356bf0040284a2fbccfb96c8",
+      "bytes": 1080,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/zstd-safe-7.3.0/LICENSE",
+      "sha256": "ce4868c8e4ebe47a7d4b3c93dbf6b802033e5ae2fa7638098173f80836daac60",
+      "bytes": 1501,
+      "licenseTextHints": [
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/zstd-sys-2.0.16+zstd.1.5.7/LICENSE",
+      "sha256": "a77b7cfeaf911ed410ffbe76f0cb2b24ad8a4d94e7ead5727e914425c416cc63",
+      "bytes": 18,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/zstd-sys-2.0.16+zstd.1.5.7/LICENSE.Apache-2.0",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "bytes": 10174,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/zstd-sys-2.0.16+zstd.1.5.7/LICENSE.BSD-3-Clause",
+      "sha256": "48341f685c87304089aa099b23c386f8bacc519ef555aa7a13e239908907b3fd",
+      "bytes": 1595,
+      "licenseTextHints": [
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/zstd-sys-2.0.16+zstd.1.5.7/LICENSE.Mit",
+      "sha256": "129e8edef29e9abcd2ebabe252f4ef1b1289cdca356bf0040284a2fbccfb96c8",
+      "bytes": 1080,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/zstd-sys-2.1.0+zstd.1.5.7/LICENSE",
+      "sha256": "ce4868c8e4ebe47a7d4b3c93dbf6b802033e5ae2fa7638098173f80836daac60",
+      "bytes": 1501,
+      "licenseTextHints": [
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "mtld3d/crates/zstd-sys-2.1.0+zstd.1.5.7/LICENSE.BSD-3-Clause",
+      "sha256": "bf7017a73a95ea63bf3716b13ec2bcd79c92942356e3408c6fb66332bad6d977",
+      "bytes": 1614,
+      "licenseTextHints": [
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "nettle/COPYING.LESSERv3",
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118",
+      "bytes": 7652,
+      "licenseTextHints": [
+        "LGPL-3.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "notproton/LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149,
+      "licenseTextHints": [
+        "GPL-3.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "notproton/LICENSE.lsteamclient",
+      "sha256": "80fda9147f8ee707cd18d1d6d71b307063fa3a02057a7c789de47f7c003510f1",
+      "bytes": 7435,
+      "licenseTextHints": [
+        "Steamworks-SDK"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "notproton/LICENSE.steam-shim",
+      "sha256": "3df3b1723e04307176b7ffe1f424514d5f871d03d2c2f668652bc8b6dfcd72af",
+      "bytes": 1511,
+      "licenseTextHints": [
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "notproton/NOTICE",
+      "sha256": "6af9f5747de31e03f8fcd430c3863bc060325a01dd708d9ec11d15baa37d3cde",
+      "bytes": 1305,
+      "licenseTextHints": [
+        "Steamworks-SDK"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "notproton/vendor-cJSON.h",
+      "sha256": "25b0145150d500498e4d209cec69c18c42cf818bffcc54690be3b895a2a16dee",
+      "bytes": 16394,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "notproton/vendor-dobby-LICENSE",
+      "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+      "bytes": 11356,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "notproton/vendored/vendor-dobby-LICENSE",
+      "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+      "bytes": 11356,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "p11-kit/COPYING",
+      "sha256": "2e1ba993904df807a10c3eda1e5c272338edc35674b679773a8b3ad460731054",
+      "bytes": 1447,
+      "licenseTextHints": [
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "sdl2-compat/LICENSE.txt",
+      "sha256": "0164aec3168ca9606c1f6066e879b4e8c7f2e46a838391f284348ab0aa1eabf2",
+      "bytes": 875,
+      "licenseTextHints": [
+        "zlib"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "sdl3/LICENSE.txt",
+      "sha256": "1c040b8271b37e5076359f8fd54240e371114112924d2df81ef87c7d6a1dfdfd",
+      "bytes": 884,
+      "licenseTextHints": [
+        "zlib"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "sparkle/LICENSE",
+      "sha256": "389a4e4e9a32f059775b13a06e25a591445ba229d2838d26dd3e7c0c45127cfe",
+      "bytes": 6154,
+      "licenseTextHints": [
+        "MIT",
+        "BSD",
+        "zlib"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "spirv-tools/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "vkd3d-proton/COPYING",
+      "sha256": "f51ad4bf5a3bd2b5f383fe28150b23d01e6f5d7b620b194150e7c6a620c43c1f",
+      "bytes": 800,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "vkd3d-proton/LICENSE",
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551",
+      "bytes": 26530,
+      "licenseTextHints": [
+        "LGPL-2.1"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "vkd3d-proton/vendored/subprojects-dxil-spirv-LICENSE.MIT",
+      "sha256": "b3ec61378a66f09835a73f53926d9b5cf79a09c9e2fe8bdd0e39aa5403325e1e",
+      "bytes": 3744,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "vkd3d-proton/vendored/subprojects-dxil-spirv-subprojects-dxbc-spirv-LICENSE",
+      "sha256": "0f8a5e687bea942a30a8e39b9915294fbe44eca866e71307a9b7083ee0e69ad8",
+      "bytes": 1071,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "vkd3d-proton/vendored/subprojects-dxil-spirv-third_party-SPIRV-Cross-LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "vkd3d-proton/vendored/subprojects-dxil-spirv-third_party-SPIRV-Tools-LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "vkd3d-proton/vendored/subprojects-dxil-spirv-third_party-spirv-headers-LICENSE",
+      "sha256": "ea43b1de38a6f90c488800d66dec1ed671e68cda530266bc96951fb5b6307613",
+      "bytes": 23503,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "vulkan-loader/LICENSE.txt",
+      "sha256": "43c0a37e6a0fa7ff3c843b3ec5a4fac84b712558ddac103fbd4c1649662a9ece",
+      "bytes": 11661,
+      "licenseTextHints": [
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "wine/COPYING.LIB",
+      "sha256": "e237fa56668030e928551ddd60f05df5fe957f75eab874bbd017e085ed722e7c",
+      "bytes": 26434,
+      "licenseTextHints": [
+        "LGPL-2.1"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "wine/LICENSE",
+      "sha256": "ae025f125a5d639f0f7abe5146efa1e3d7453cc10b744b2910806fa3f46626ef",
+      "bytes": 824,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "hadron-0.3.0",
+      "file": "wine/NOTICES.md",
+      "sha256": "10d1e74a0cf62c3d74e9c30b182b698766254ac9dd43b59987f3caa1a73546cb",
+      "bytes": 67272,
+      "licenseTextHints": [
+        "LGPL-2.1",
+        "MIT",
+        "BSD",
+        "zlib"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "LICENSE.TXT",
+      "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee",
+      "bytes": 15141,
+      "licenseTextHints": [
+        "MIT",
+        "Apache-2.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "aarch64-w64-mingw32/share/mingw32/COPYING",
+      "sha256": "99a69660981156c21336fdb5661f89341b013c94e4bf9e1c7467b4745718397f",
+      "bytes": 2326,
+      "licenseTextHints": [
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "aarch64-w64-mingw32/share/mingw32/COPYING.MinGW-w64-runtime.txt",
+      "sha256": "1db8da07b436c68833c0673ffee3d9fcb2526047f3820b81661865dfedc79a1f",
+      "bytes": 12155,
+      "licenseTextHints": [
+        "MIT",
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "aarch64-w64-mingw32/share/mingw32/COPYING.MinGW-w64.txt",
+      "sha256": "f38e6194bd3bfa1b654f118e5acefe0aead437bbe669eee43957ccc65a7127f1",
+      "bytes": 5905,
+      "licenseTextHints": [
+        "MIT",
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "aarch64-w64-mingw32/share/mingw32/COPYING.winpthreads.txt",
+      "sha256": "63263614cdd29f2f93cba85e992f041b31f9fc7b4033692f31269489a8a1b177",
+      "bytes": 2883,
+      "licenseTextHints": [
+        "MIT",
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "aarch64-w64-mingw32/share/mingw32/COPYING.winstorecompat.txt",
+      "sha256": "fa7368d1f93d890c173177475d8ec7aff265a7d08f1f364d66f74d138978ce36",
+      "bytes": 1099,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "armv7-w64-mingw32/lib/liboemlicense.a",
+      "sha256": "2c54a4d445a779f3ee616b24d10fcbaf90e7caf6cc6ca871cb0a0febfb362c00",
+      "bytes": 2058,
+      "licenseTextHints": [],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "armv7-w64-mingw32/share/mingw32/COPYING",
+      "sha256": "99a69660981156c21336fdb5661f89341b013c94e4bf9e1c7467b4745718397f",
+      "bytes": 2326,
+      "licenseTextHints": [
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "armv7-w64-mingw32/share/mingw32/COPYING.MinGW-w64-runtime.txt",
+      "sha256": "1db8da07b436c68833c0673ffee3d9fcb2526047f3820b81661865dfedc79a1f",
+      "bytes": 12155,
+      "licenseTextHints": [
+        "MIT",
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "armv7-w64-mingw32/share/mingw32/COPYING.MinGW-w64.txt",
+      "sha256": "f38e6194bd3bfa1b654f118e5acefe0aead437bbe669eee43957ccc65a7127f1",
+      "bytes": 5905,
+      "licenseTextHints": [
+        "MIT",
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "armv7-w64-mingw32/share/mingw32/COPYING.winpthreads.txt",
+      "sha256": "63263614cdd29f2f93cba85e992f041b31f9fc7b4033692f31269489a8a1b177",
+      "bytes": 2883,
+      "licenseTextHints": [
+        "MIT",
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "armv7-w64-mingw32/share/mingw32/COPYING.winstorecompat.txt",
+      "sha256": "fa7368d1f93d890c173177475d8ec7aff265a7d08f1f364d66f74d138978ce36",
+      "bytes": 1099,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "i686-w64-mingw32/share/mingw32/COPYING",
+      "sha256": "99a69660981156c21336fdb5661f89341b013c94e4bf9e1c7467b4745718397f",
+      "bytes": 2326,
+      "licenseTextHints": [
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "i686-w64-mingw32/share/mingw32/COPYING.MinGW-w64-runtime.txt",
+      "sha256": "1db8da07b436c68833c0673ffee3d9fcb2526047f3820b81661865dfedc79a1f",
+      "bytes": 12155,
+      "licenseTextHints": [
+        "MIT",
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "i686-w64-mingw32/share/mingw32/COPYING.MinGW-w64.txt",
+      "sha256": "f38e6194bd3bfa1b654f118e5acefe0aead437bbe669eee43957ccc65a7127f1",
+      "bytes": 5905,
+      "licenseTextHints": [
+        "MIT",
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "i686-w64-mingw32/share/mingw32/COPYING.winpthreads.txt",
+      "sha256": "63263614cdd29f2f93cba85e992f041b31f9fc7b4033692f31269489a8a1b177",
+      "bytes": 2883,
+      "licenseTextHints": [
+        "MIT",
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "i686-w64-mingw32/share/mingw32/COPYING.winstorecompat.txt",
+      "sha256": "fa7368d1f93d890c173177475d8ec7aff265a7d08f1f364d66f74d138978ce36",
+      "bytes": 1099,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "share/gendef/COPYING.txt",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "bytes": 35147,
+      "licenseTextHints": [
+        "GPL-3.0"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "share/widl/COPYING.txt",
+      "sha256": "99a69660981156c21336fdb5661f89341b013c94e4bf9e1c7467b4745718397f",
+      "bytes": 2326,
+      "licenseTextHints": [
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "x86_64-w64-mingw32/share/mingw32/COPYING",
+      "sha256": "99a69660981156c21336fdb5661f89341b013c94e4bf9e1c7467b4745718397f",
+      "bytes": 2326,
+      "licenseTextHints": [
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "x86_64-w64-mingw32/share/mingw32/COPYING.MinGW-w64-runtime.txt",
+      "sha256": "1db8da07b436c68833c0673ffee3d9fcb2526047f3820b81661865dfedc79a1f",
+      "bytes": 12155,
+      "licenseTextHints": [
+        "MIT",
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "x86_64-w64-mingw32/share/mingw32/COPYING.MinGW-w64.txt",
+      "sha256": "f38e6194bd3bfa1b654f118e5acefe0aead437bbe669eee43957ccc65a7127f1",
+      "bytes": 5905,
+      "licenseTextHints": [
+        "MIT",
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "x86_64-w64-mingw32/share/mingw32/COPYING.winpthreads.txt",
+      "sha256": "63263614cdd29f2f93cba85e992f041b31f9fc7b4033692f31269489a8a1b177",
+      "bytes": 2883,
+      "licenseTextHints": [
+        "MIT",
+        "BSD"
+      ],
+      "componentBinaryDistributed": false
+    },
+    {
+      "group": "llvm-mingw-20261006-ucrt",
+      "file": "x86_64-w64-mingw32/share/mingw32/COPYING.winstorecompat.txt",
+      "sha256": "fa7368d1f93d890c173177475d8ec7aff265a7d08f1f364d66f74d138978ce36",
+      "bytes": 1099,
+      "licenseTextHints": [
+        "MIT"
+      ],
+      "componentBinaryDistributed": false
+    }
+  ],
+  "externalBundleGaps": [
+    {
+      "component": "Gcenx Wine Stable 11.0_1",
+      "finding": "No license/notice files found in the acquired application bundle. Upstream Wine license does not establish compliance for every bundled library. Do not redistribute this bundle without a complete component/source inventory."
+    }
+  ]
+}
