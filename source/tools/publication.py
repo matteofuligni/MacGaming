@@ -35,7 +35,11 @@ def git(root, *arguments):
 
 def private_markers(root):
     """Compute local markers privately; never store their values in reports."""
-    markers = {getpass.getuser(), str(Path.home())}
+    markers = set()
+    # A CI service account (GitHub's macOS user is "runner") is not a person, and its name
+    # matches ordinary source words such as the Swift type Runner.
+    if not os.environ.get("GITHUB_ACTIONS"):
+        markers.update({getpass.getuser(), str(Path.home())})
     registration = root / "manifests/storage.json"
     if registration.is_file():
         identity = json.loads(registration.read_text())
